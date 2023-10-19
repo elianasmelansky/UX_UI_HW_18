@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&family=Montserrat&family=Roboto:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    color: black;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: #937FAD;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #D8E1FF
+}
+
+.home{
+    height:100vh;
+    background: url ("images/headshot.jpg") no-repeat;
+    background-color: #FAF5FF;
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    align-items:center;
+    padding: 75 10%;
+    position: relative;
+}
+
+.home-content{
+    background: #D8E1FF;
+    max-width: 80%;
+    padding: 75px;
+    box-shadow: 0px 0px 20px #594157;
+    position: absolute;
+    left: 10%;
+}
+
+.home-content h1{
+    font-size: 56px;
+    font-weight: 700;
+    padding: 20px;
+    line-height: 1.2;
+}
+
+.home-content h3 {
+    font-size:24px;
+    font-weight: 700;
+    padding: 20px;
+}
+
+.home-content p {
+    padding: 20px;
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+.home-content .btn-box {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    width: 300px;
+    height: 50px;
+    background: #937FAD;
+    border-radius: 15px;
+    transition: .3s;
+}
+
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.btn-box:hover{
+    background-color:#594157;
+    color: white;
+}
+
+.footer{
+    position: relative;
+    padding: 20px 10%;
+    background: #937FAD;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size:24px;
+    bottom: 0;
+    left: 0;
+}
+
+.footer-content{
+    background: #D8E1FF;
+    max-width: 100px;
+    padding: 75px;
+}
+
+.socials{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    font-size: 32px;
+    color: #594157;
+}
+
+.adjust-line-height {
+    line-height: 1.5em;
+  }
+
+.img_deg {
+    float: left;
+    padding: 40px;
+}
