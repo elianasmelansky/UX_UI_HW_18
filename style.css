@@ -140,3 +140,132 @@ body{
     float: left;
     padding: 40px;
 }
+
+/* My UX Skills section coded using CSS flex */
+.flexContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.flexChild {
+    width: 30%; /* Set width to 30% for three items in a row */
+    margin: 10px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Additional styles for icons */
+.flexChild img {
+    width: 50px; /* Set width for your skill icons */
+    height: 50px; /* Set height for your skill icons */
+    margin-bottom: 10px;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+    .flexChild {
+        width: 45%; /* Adjust width for two items in a row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .flexChild {
+        width: 100%; /* Set width to 100% for a single item in a row on smaller screens */
+    }
+}
+
+/* My Work Section Constructed using CSS Grid */
+.workGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    grid-template-areas: 
+        "project1 project2"
+        "project3 project4";
+}
+
+.workItem {
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Assign grid areas to individual items */
+.project1 {
+    grid-area: project1;
+}
+
+.project2 {
+    grid-area: project2;
+}
+
+.project3 {
+    grid-area: project3;
+}
+
+.project4 {
+    grid-area: project4;
+}
+
+/* Mobile Media Query */
+@media (max-width: 600px) {
+    .flexContainer {
+        flex-direction: column; /* Display flex container as a column for mobile devices */
+    }
+
+    .flexChild {
+        width: 100%; /* Make flex children take up 100% width */
+        margin: 10px 0; /* Adjust margin for better spacing */
+    }
+
+    .workGrid {
+        grid-template-columns: 1fr; /* Display a single column for mobile views */
+        grid-template-rows: auto auto auto auto; /* Adjust row height based on content */
+        grid-template-areas: 
+            "project1"
+            "project2"
+            "project3"
+            "project4";
+    }
+
+    /* Assign grid areas for mobile views */
+    .project1, .project2, .project3, .project4 {
+        grid-area: auto; /* Reset grid area for individual items */
+    }
+}
+
+@media (max-width: 768px) {
+    .home {
+        padding: 50px 5%;
+    }
+
+    .home-content {
+        max-width: 100%;
+        left: 0;
+        padding: 50px;
+    }
+
+    .home-content h1 {
+        font-size: 36px;
+    }
+
+    .home-content h3 {
+        font-size: 20px;
+    }
+
+    .home-content p {
+        font-size: 14px;
+        margin: 10px 0 20px;
+    }
+
+    .btn-box {
+        width: 200px;
+        height: 40px;
+        font-size: 16px;
+    }
+}
