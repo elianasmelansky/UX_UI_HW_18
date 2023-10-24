@@ -9,6 +9,7 @@
 
 body{
     color: black;
+    background-color: #FAF5FF;
 }
 
 .header{
@@ -40,10 +41,6 @@ body{
 
 .home{
     height:100vh;
-    background: url ("images/headshot.jpg") no-repeat;
-    background-color: #FAF5FF;
-    background-size: cover;
-    background-position: center;
     display:flex;
     align-items:center;
     padding: 75 10%;
@@ -57,6 +54,7 @@ body{
     box-shadow: 0px 0px 20px #594157;
     position: absolute;
     left: 10%;
+    border-radius: 5px;
 }
 
 .home-content h1{
@@ -106,6 +104,41 @@ body{
     color: white;
 }
 
+.workItem .button {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    width: 200px;
+    height: 50px;
+    background: #937FAD;
+    border-radius: 15px;
+    transition: .3s;
+}
+
+.button a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color:#594157;
+    color: white;
+}
+
+/* .Details{
+    top: 100px;
+    position: relative;
+} */
+
+
 .footer{
     position: relative;
     padding: 20px 10%;
@@ -149,18 +182,19 @@ body{
 }
 
 .flexChild {
-    width: 30%; /* Set width to 30% for three items in a row */
-    margin: 10px;
+    width: 30%; 
+    margin: 20px;
     padding: 20px;
-    background-color: #f5f5f5;
+    background-color: #D8E1FF;
     border-radius: 5px;
     text-align: center;
+    box-shadow: 0px 0px 20px #594157;
 }
 
 /* Additional styles for icons */
 .flexChild img {
-    width: 50px; /* Set width for your skill icons */
-    height: 50px; /* Set height for your skill icons */
+    width: 50px; 
+    height: 50px; 
     margin-bottom: 10px;
 }
 
@@ -190,26 +224,19 @@ body{
 
 .workItem {
     padding: 20px;
-    background-color: #f5f5f5;
+    margin: 20px;
+    background-color: #D8E1FF;
     border-radius: 5px;
     text-align: center;
+    box-shadow: 0px 0px 20px #594157;
 }
 
-/* Assign grid areas to individual items */
 .project1 {
     grid-area: project1;
 }
 
 .project2 {
     grid-area: project2;
-}
-
-.project3 {
-    grid-area: project3;
-}
-
-.project4 {
-    grid-area: project4;
 }
 
 /* Mobile Media Query */
@@ -235,7 +262,7 @@ body{
 
     /* Assign grid areas for mobile views */
     .project1, .project2, .project3, .project4 {
-        grid-area: auto; /* Reset grid area for individual items */
+        grid-area: auto; 
     }
 }
 
@@ -269,3 +296,4 @@ body{
         font-size: 16px;
     }
 }
+
