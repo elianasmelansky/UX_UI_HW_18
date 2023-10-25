@@ -10,10 +10,19 @@
 body{
     color: black;
     background-color: #FAF5FF;
+    box-sizing: border-box;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 80%;
+    margin: 0 auto;
 }
 
 .header{
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -43,16 +52,17 @@ body{
     height:100vh;
     display:flex;
     align-items:center;
-    padding: 75 10%;
-    position: relative;
+    padding: 75px 10%;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
 }
 
 .home-content{
     background: #D8E1FF;
-    max-width: 80%;
+    max-width: 100%;
     padding: 75px;
     box-shadow: 0px 0px 20px #594157;
-    position: absolute;
     left: 10%;
     border-radius: 5px;
 }
@@ -88,7 +98,6 @@ body{
 }
 
 .btn-box a {
-    position: relative;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -116,7 +125,6 @@ body{
 }
 
 .button a {
-    position: relative;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -133,22 +141,17 @@ body{
     color: white;
 }
 
-/* .Details{
-    top: 100px;
-    position: relative;
-} */
-
-
 .footer{
-    position: relative;
-    padding: 20px 10%;
+    padding: 50px 10%;
     background: #937FAD;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     font-size:24px;
+    font-weight: bold;
     bottom: 0;
     left: 0;
+    width: 100%;
 }
 
 .footer-content{
@@ -158,7 +161,6 @@ body{
 }
 
 .socials{
-    position: relative;
     display: inline-flex;
     align-items: center;
     font-size: 32px;
@@ -175,10 +177,19 @@ body{
 }
 
 /* My UX Skills section coded using CSS flex */
+
 .flexContainer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 100px;
+    padding: 50px;
+}
+
+.mySkills h1 {
+    font-size:24px;
+    font-weight: 700;
+    margin-left: 120px;
 }
 
 .flexChild {
@@ -191,7 +202,6 @@ body{
     box-shadow: 0px 0px 20px #594157;
 }
 
-/* Additional styles for icons */
 .flexChild img {
     width: 50px; 
     height: 50px; 
@@ -201,17 +211,30 @@ body{
 /* Responsive layout for smaller screens */
 @media (max-width: 768px) {
     .flexChild {
-        width: 45%; /* Adjust width for two items in a row on smaller screens */
+        width: 45%; 
     }
 }
 
 @media (max-width: 480px) {
     .flexChild {
-        width: 100%; /* Set width to 100% for a single item in a row on smaller screens */
+        width: 100%; 
     }
 }
 
 /* My Work Section Constructed using CSS Grid */
+.myWork h1 {
+    font-size:24px;
+    font-weight: 700;
+    margin-left: 120px;
+}
+
+.myWork h3 {
+    font-size:24px;
+    font-weight: 700;
+    text-align: center;
+    padding: 30px;
+}
+
 .workGrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -220,6 +243,7 @@ body{
     grid-template-areas: 
         "project1 project2"
         "project3 project4";
+    padding: 50px;
 }
 
 .workItem {
@@ -242,17 +266,17 @@ body{
 /* Mobile Media Query */
 @media (max-width: 600px) {
     .flexContainer {
-        flex-direction: column; /* Display flex container as a column for mobile devices */
+        flex-direction: column; 
     }
 
     .flexChild {
-        width: 100%; /* Make flex children take up 100% width */
-        margin: 10px 0; /* Adjust margin for better spacing */
+        width: 100%; 
+        margin: 10px 0; 
     }
 
     .workGrid {
-        grid-template-columns: 1fr; /* Display a single column for mobile views */
-        grid-template-rows: auto auto auto auto; /* Adjust row height based on content */
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto auto auto auto; 
         grid-template-areas: 
             "project1"
             "project2"
