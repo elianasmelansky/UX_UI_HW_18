@@ -10,10 +10,21 @@
 body{
     color: black;
     background-color: #FAF5FF;
+    box-sizing: border-box;
 }
 
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+
 .header{
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     left: 0;
     width: 100%;
@@ -43,16 +54,19 @@ body{
     height:100vh;
     display:flex;
     align-items:center;
-    padding: 75 10%;
-    position: relative;
+    padding: 75px 10%;
+    /* position: relative; */
+    width: 100%;
+    height: 100%;
+    justify-content: center;
 }
 
 .home-content{
     background: #D8E1FF;
-    max-width: 80%;
+    max-width: 100%;
     padding: 75px;
     box-shadow: 0px 0px 20px #594157;
-    position: absolute;
+    /* position: absolute; */
     left: 10%;
     border-radius: 5px;
 }
@@ -88,7 +102,7 @@ body{
 }
 
 .btn-box a {
-    position: relative;
+    /* position: relative; */
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -116,7 +130,7 @@ body{
 }
 
 .button a {
-    position: relative;
+    /* position: relative; */
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -140,15 +154,16 @@ body{
 
 
 .footer{
-    position: relative;
-    padding: 20px 10%;
+    /* position: relative; */
+    padding: 50px 10%;
     background: #937FAD;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     font-size:24px;
     bottom: 0;
     left: 0;
+    width: 100%;
 }
 
 .footer-content{
@@ -158,7 +173,7 @@ body{
 }
 
 .socials{
-    position: relative;
+    /* position: relative; */
     display: inline-flex;
     align-items: center;
     font-size: 32px;
